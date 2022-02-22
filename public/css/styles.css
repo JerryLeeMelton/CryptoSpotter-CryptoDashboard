@@ -53,3 +53,12 @@ body {
   border-radius: 1rem;
   filter: drop-shadow(0rem 0.25rem 0.3rem rgba(0, 0, 0, 0.25));
 }
+
+.footer {
+  font-family: "Quicksand-Light", sans-serif;
+  font-size: 0.8rem;
+  color: #ffffff;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}

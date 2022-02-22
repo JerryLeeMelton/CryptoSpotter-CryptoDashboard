@@ -13,3 +13,23 @@
   font-style: normal;
   font-weight: 700;
 }
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("/fonts/OpenSans-Regular");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("/fonts/OpenSans-Bold");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("/fonts/OpenSans-Light");
+  font-style: normal;
+  font-weight: light;
+}
