@@ -1,0 +1,5 @@
+*.BridgeSort
+
+node_modules/
+public/images/
+public/fonts/

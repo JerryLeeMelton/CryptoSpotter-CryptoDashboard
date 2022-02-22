@@ -1,0 +1,15 @@
+/* Font Imports ============================================================= */
+
+@font-face {
+  font-family: "Quicksand-Light";
+  src: url("/fonts/Quicksand-VariableFont_wght.ttf");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Quicksand-Bold";
+  src: url("/fonts/Quicksand-VariableFont_wght.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
