@@ -1,7 +1,44 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.main-body-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #000CF4, #345CE4, #0DA7AD);
+  background-size: 150% 150%;
+  animation: backgroundAnimation 5s ease-in-out infinite;
+}
+
+.logo-wrapper {
+  padding-top: 2rem;
+  text-align: center;
+}
+
 .site-logo {
   font-family: "Quicksand-Light";
+  font-size: 5rem;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .logo-bold {
   font-family: "Quicksand-Bold";
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
 }
