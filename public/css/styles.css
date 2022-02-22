@@ -8,11 +8,12 @@ body {
   height: 100vh;
   background: linear-gradient(135deg, #000CF4, #345CE4, #0DA7AD);
   background-size: 150% 150%;
-  animation: backgroundAnimation 5s ease-in-out infinite;
+  animation: backgroundAnimation 4.5s ease-in-out infinite;
+  text-align: center;
 }
 
 .logo-wrapper {
-  padding-top: 2rem;
+  padding-top: 1rem;
   text-align: center;
 }
 
@@ -42,4 +43,13 @@ body {
   100% {
     background-position: 0 50%;
   }
+}
+
+.prices-box {
+  background-color: #ffffff;
+  width: 50%;
+  height: 20%;
+  margin: auto;
+  border-radius: 1rem;
+  filter: drop-shadow(0rem 0.25rem 0.3rem rgba(0, 0, 0, 0.25));
 }
