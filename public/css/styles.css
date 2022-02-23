@@ -12,7 +12,7 @@ a {
   height: 100%;
   background: linear-gradient(135deg, #000CF4, #345CE4, #0DA7AD);
   background-size: 175% 175%;
-  animation: backgroundAnimation 4s ease-in-out infinite;
+  animation: backgroundAnimation 3.5s ease-in-out infinite;
   text-align: center;
 }
 
@@ -42,11 +42,9 @@ a {
   0% {
     background-position: 0 50%;
   }
-
   50% {
     background-position: 100% 50%;
   }
-
   100% {
     background-position: 0 50%;
   }
@@ -61,10 +59,13 @@ a {
   font-weight: bold;
   font-size: 0.9rem;
   background-color: #ffffff;
-  width: 50%;
+  width: 60%;
+  min-width: 750px;
+  max-width: 950px;
   margin: auto;
   margin-top: 6rem;
-  padding-top: 0.15rem;
+  padding-top: 1rem;
+  padding-bottom: 1.25rem;
   border-radius: 1rem;
   filter: drop-shadow(0rem 0.25rem 0.3rem rgba(0, 0, 0, 0.25));
 }
@@ -96,6 +97,12 @@ th, td {
   vertical-align: middle;
 }
 
+.cell-wrapper {
+  display: flex;
+  align-items: middle;
+  justify-content: center;
+}
+
 .crypto-id {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -121,4 +128,22 @@ th, td {
   position: absolute;
   width: 100%;
   bottom: 0px;
+}
+
+
+@media (max-width: 800px) {
+  .prices-box {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-logo {
+    font-size: 3.5rem;
+  }
+
+  .price-row {
+    font-size: 0.9rem;
+  }
 }

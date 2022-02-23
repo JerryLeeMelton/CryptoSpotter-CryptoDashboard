@@ -11,6 +11,13 @@ const formatter = new Intl.NumberFormat("en-US", {
   currency: "USD"
 });
 
+const capFormatter = new Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+  maximumFractionDigits: 0,
+  minimumFractionDigits: 0
+});
+
 const app = express();
 const coinGeckoClient = new coinGecko();
 
@@ -32,7 +39,8 @@ app.get("/", async (req, res) => {
       symbol: json[i].symbol.toUpperCase(),
       current_price: formatter.format(json[i].current_price),
       price_change_percentage_24h_in_currency: parseFloat(json[i].price_change_percentage_24h_in_currency).toFixed(2) + "%",
-      market_cap: formatter.format(json[i].market_cap)
+      market_cap: capFormatter.format(json[i].market_cap)
+      // market_cap: "$" + parseInt(json[i].market_cap)
     });
   }
 
