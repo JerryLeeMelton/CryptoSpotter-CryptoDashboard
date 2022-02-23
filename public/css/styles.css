@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .main-body-wrapper {
   width: 100vw;
   height: 100vh;
@@ -24,7 +28,10 @@ body {
   color: #ffffff;
   margin-left: auto;
   margin-right: auto;
+}
 
+.site-logo a {
+  color: #ffffff;
 }
 
 .logo-bold {
@@ -46,12 +53,24 @@ body {
 }
 
 .prices-box {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem;
   background-color: #ffffff;
   width: 50%;
   height: 20%;
   margin: auto;
+  margin-top: 6rem;
+  padding-top: 0.15rem;
   border-radius: 1rem;
   filter: drop-shadow(0rem 0.25rem 0.3rem rgba(0, 0, 0, 0.25));
+}
+
+.price-divider {
+  background-color: #BDBDBD;
+  border: none;
+  width: 95%;
+  height: 1px;
 }
 
 .footer {
