@@ -59,7 +59,7 @@ a {
   font-weight: bold;
   font-size: 0.9rem;
   background-color: #ffffff;
-  width: 60%;
+  width: 80%;
   min-width: 750px;
   max-width: 950px;
   margin: auto;
@@ -131,7 +131,7 @@ th, td {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 780px) {
   .prices-box {
     width: 100%;
     min-width: 0;
