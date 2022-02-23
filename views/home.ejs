@@ -9,14 +9,70 @@
   </h1>
 </div>
 
+<div class="table-wrapper">
 
 <div class="prices-box">
-  <p>Name</p>
-  <hr class="price-divider">
+
+  <table>
+
+    <thead>
+      <tr>
+        <th>Symbol</th>
+        <th>Price</th>
+        <th>24H %</th>
+        <th>Market Cap</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td colspan="5">
+          <hr class="price-divider">
+        </td>
+      </tr>
+
+      <% for (var i = 0; i < 30; i++) { %>
+  <tr class="price-row">
+    <td>
+      <img src="<%= priceData[i].image %>">
+      <span class="crypto-id"><%= priceData[i].id %></span>
+      <span class="crypto-symbol"><%= priceData[i].symbol %></span>
+    </td>
+    <td>
+      <%= priceData[i].current_price %>
+    </td>
+    <td
+    <% if (parseFloat(priceData[i].price_change_percentage_24h_in_currency) >= 0) { %>
+      class="positive-change"
+    <% } else { %>
+      class="negative-change"
+    <%} %>
+    >
+      <%= priceData[i].price_change_percentage_24h_in_currency %>
+    </td>
+    <td>
+      <%= priceData[i].market_cap %>
+    </td>
+  </tr>
+
+  <% if (i < 29) { %>
+    <tr>
+      <td colspan="5">
+        <hr class="price-divider">
+      </td>
+    </tr>
+  <% } %>
+
+<% } %>
+
+
+    </tbody>
+
+  </table>
 
 </div>
-
-
+</div>
 
 
 <%- include("partials/footer") -%>
