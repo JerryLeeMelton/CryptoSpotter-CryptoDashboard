@@ -9,6 +9,8 @@ const fetch = (...args) =>
 const app = express();
 const coinGeckoClient = new coinGecko();
 
+const PORT = process.env.PORT || 3000;
+
 // These will format the data for the price chart later
 const formatter = new Intl.NumberFormat("en-US", {
   style: "currency",
@@ -55,5 +57,5 @@ app.get("/", async (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log("Server started on port 3000.");
+  console.log(`Server started on port ${PORT}.`);
 });
