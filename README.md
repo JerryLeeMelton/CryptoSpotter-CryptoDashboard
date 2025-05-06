@@ -39,7 +39,7 @@ Explore the live dashboard at [crypto.jerryleemelton.com](https://crypto.jerryle
     
 4. **Run the Application**:
     ```bash
-    `node app.js` 
+    node app.js
     
 5. **Access the Dashboard**:  
 Open your browser and navigate to `http://localhost:3000`
